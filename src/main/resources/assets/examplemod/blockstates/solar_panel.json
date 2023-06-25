@@ -1,0 +1,12 @@
+{
+    "variants": {
+        "facing=north,part=head": {"model":"examplemod:block/solar_panel_left"},
+        "facing=south,part=head": {"model":"examplemod:block/solar_panel_left","y":180},
+        "facing=west,part=head": {"model":"examplemod:block/solar_panel_left","y":270},
+        "facing=east,part=head": {"model":"examplemod:block/solar_panel_left","y":90},
+        "facing=north,part=foot": {"model":"examplemod:block/solar_panel_right"},
+        "facing=south,part=foot": {"model":"examplemod:block/solar_panel_right","y":180},
+        "facing=west,part=foot": {"model":"examplemod:block/solar_panel_right","y":270},
+        "facing=east,part=foot": {"model":"examplemod:block/solar_panel_right","y":90}
+    }
+}

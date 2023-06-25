@@ -1,0 +1,16 @@
+{
+    "variants": {
+        "facing=north,wired_connected=0": {"model":"examplemod:block/switch_block"},
+        "facing=south,wired_connected=0": {"model":"examplemod:block/switch_block","y":180},
+        "facing=west,wired_connected=0": {"model":"examplemod:block/switch_block","y":270},
+        "facing=east,wired_connected=0": {"model":"examplemod:block/switch_block","y":90},
+
+        "facing=north,wired_connected=1": {"model":"examplemod:block/switch_wired_1"},
+        "facing=south,wired_connected=1": {"model":"examplemod:block/switch_wired_1","y":180},
+        "facing=west,wired_connected=1": {"model":"examplemod:block/switch_wired_1","y":270},
+        "facing=east,wired_connected=1": {"model":"examplemod:block/switch_wired_1","y":90}
+    }
+
+
+
+}

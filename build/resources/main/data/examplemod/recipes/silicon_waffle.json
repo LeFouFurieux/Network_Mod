@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern" : [
+        "###",
+        "#r#",
+        "###"
+    ],
+    "key":{
+        "#":{
+            "item" : "minecraft:bread"
+        },
+        "r":{
+            "item" : "examplemod:silicon_wafer"
+        }
+    },
+    "result":{
+        "item":"examplemod:silicon_waffle"
+    }
+}

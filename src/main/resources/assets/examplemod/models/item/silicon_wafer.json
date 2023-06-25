@@ -1,0 +1,13 @@
+{
+	"parent" : "item/generated",
+	"textures": {
+		"layer0":"examplemod:item/silicon_wafer"
+		},
+	"display": {
+		"gui": {
+			"scale": [ 0.8,0.8,0.8 ],
+			"rotation": [0,0,0],
+			"translation": [ 0, 0, 0 ]
+		}
+	}
+}

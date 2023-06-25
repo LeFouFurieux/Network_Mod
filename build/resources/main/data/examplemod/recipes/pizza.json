@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern" : [
+        "rcr",
+        "mmm",
+        "###"
+    ],
+    "key":{
+        "#":{
+            "item" : "minecraft:bread"
+        },
+        "c":{
+            "item" : "minecraft:carrot"
+        },
+        "m":{
+            "item" : "minecraft:milk_bucket"
+        },
+        "r":{
+            "item" : "minecraft:red_mushroom"
+        }
+    },
+    "result":{
+        "item":"examplemod:pizza"
+    }
+}

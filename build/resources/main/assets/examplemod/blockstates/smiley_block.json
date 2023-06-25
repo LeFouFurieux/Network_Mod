@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "happy=true": {"model":"examplemod:block/smiley_block"},
+        "happy=false": {"model":"examplemod:block/sad_block"}
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "parent" : "block/cube_column",
+  "textures": {
+    "end": "examplemod:block/smiley_all",
+    "side": "examplemod:block/smiley_right"
+  }
+}

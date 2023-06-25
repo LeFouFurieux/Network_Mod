@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern" : [
+        "###",
+        "###",
+        "###"
+    ],
+    "key":{
+        "#":{
+            "item" : "examplemod:raw_silicon"
+        }
+    },
+    "result":{
+        "item":"examplemod:substrate"
+    }
+}

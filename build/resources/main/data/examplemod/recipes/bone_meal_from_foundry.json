@@ -1,0 +1,11 @@
+{
+    "type": "examplemod:small_foundry_alt_one",
+    "ingredients": [
+        {
+            "item": "minecraft:sand"
+        }
+    ],
+    "output": {
+        "item": "minecraft:bone_meal"
+    }
+}

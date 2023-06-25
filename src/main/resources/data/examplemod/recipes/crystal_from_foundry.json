@@ -1,0 +1,11 @@
+{
+    "type": "examplemod:small_foundry",
+    "ingredients": [
+        {
+            "item": "examplemod:raw_silicon"
+        }
+    ],
+    "output": {
+        "item": "examplemod:silicon_crystal"
+    }
+}

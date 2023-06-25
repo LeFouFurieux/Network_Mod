@@ -1,0 +1,11 @@
+{
+    "type": "examplemod:small_foundry",
+    "ingredients": [
+        {
+            "item": "minecraft:sand"
+        }
+    ],
+    "output": {
+        "item": "examplemod:raw_silicon"
+    }
+}

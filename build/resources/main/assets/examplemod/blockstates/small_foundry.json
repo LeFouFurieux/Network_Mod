@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model":"examplemod:block/small_foundry"},
+    "facing=south": {"model":"examplemod:block/small_foundry","y":180},
+    "facing=west": {"model":"examplemod:block/small_foundry","y":270},
+    "facing=east": {"model":"examplemod:block/small_foundry","y":90}
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"item.examplemod.kimc_block": "Sword",
+	"item.examplemod.pizza-sword": "Pizza violente",
+	"item.examplemod.heat_spreader": "Heat Spreader",
+	"item.examplemod.raw_silicon": "Raw Silicon",
+	"item.examplemod.silicon_crystal": "Silicon Crystal",
+	"item.examplemod.silicon_wafer": "Silicon Wafer",
+	"item.examplemod.silicon_waffle": "Silicon waffle",
+	"item.examplemod.substrate": "Substrate",
+
+	"item.minecraft.potion.effect.photoresist": "Photoresist Liquid",
+	"item.minecraft.splash_potion.effect.photoresist": "Splash Liquid of Photoresist",
+	"item.minecraft.lingering_potion.effect.photoresist": "Lingering of Photoresist Liquid",
+
+	"block.examplemod.ethernet_wire": "Ethernet Wire",
+	"block.examplemod.smiley_block": "Block of Smile",
+	"block.examplemod.gun": "Rainbow gun",
+	"block.examplemod.switch_block": "Switch",
+	"block.examplemod.solar_panel": "Solar panel",
+	"block.examplemod.small_foundry": "Small foundry",
+
+	"key.category.examplemod.hacking" :  "Hacking mod",
+	"key.examplemod.hack_device": "Hack device",
+
+	"creativemodetab.Network_tab": "Network Tab",
+
+	"entity.minecraft.villager.examplemod.network_master" : "Network Master"
+}
