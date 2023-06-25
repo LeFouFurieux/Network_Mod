@@ -60,7 +60,6 @@ public class ExampleMod
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
     // Creates a new Block with the id "examplemod:example_block", combining the namespace and path
-    //public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("smiley_block", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> EXAMPLE_BLOCK = BLOCKS.register("smiley_block", () -> new Smiley_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("smiley_block", () -> new BlockItem(EXAMPLE_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Block> small_foundry_block = BLOCKS.register("small_foundry", () -> new small_foundry(BlockBehaviour.Properties.of(Material.STONE).noOcclusion()));
