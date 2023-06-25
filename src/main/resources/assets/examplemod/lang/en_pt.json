@@ -1,20 +1,20 @@
 {
-	"item.examplemod.green_sword": "Green Sword",
-	"item.examplemod.pizza": "Pizza",
+	"item.examplemod.green_sword": "Cutlass o' Algae",
+	"item.examplemod.pizza": "Hardtack o' veggies",
 	"item.examplemod.heat_spreader": "Heat Spreader",
 	"item.examplemod.raw_silicon": "Raw Silicon",
 	"item.examplemod.silicon_crystal": "Silicon Crystal",
 	"item.examplemod.silicon_wafer": "Silicon Wafer",
 	"item.examplemod.silicon_waffle": "Silicon waffle",
 	"item.examplemod.substrate": "Substrate",
-	"item.examplemod.gun_item": "Mushroom gun",
+	"item.examplemod.gun_item": "Flintlock Pistol of Mushroom",
 
 
-	"item.minecraft.potion.effect.photoresist": "Photoresist Liquid",
-	"item.minecraft.splash_potion.effect.photoresist": "Splash Liquid of Photoresist",
-	"item.minecraft.lingering_potion.effect.photoresist": "Lingering of Photoresist Liquid",
+	"item.minecraft.potion.effect.photoresist": "Photoresist Rhum",
+	"item.minecraft.splash_potion.effect.photoresist": "Splash Rhum of Photoresist",
+	"item.minecraft.lingering_potion.effect.photoresist": "Lingering of Photoresist Rhum",
 
-	"block.examplemod.ethernet_wire": "Ethernet Wire",
+	"block.examplemod.ethernet_wire": "Weird Halyard",
 	"block.examplemod.smiley_block": "Block of Smile",
 
 	"block.examplemod.switch_block": "Switch",

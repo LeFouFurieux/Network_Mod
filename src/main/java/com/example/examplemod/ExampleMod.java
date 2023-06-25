@@ -166,6 +166,7 @@ public class ExampleMod
             event.accept(HEAT_SPREADER);
             event.accept(ETHERNET_WIRE_ITEM);
             event.accept(PIZZA_ITEM);
+            event.accept(PotionUtils.setPotion(new ItemStack(Items.POTION,1),ModPotions.PHOTORESIST.get()));
         }
 
         if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
@@ -182,6 +183,7 @@ public class ExampleMod
             event.accept(SUBSTRATE);
             event.accept(ETHERNET_WIRE_ITEM);
             event.accept(PIZZA_ITEM);
+            event.accept(PotionUtils.setPotion(new ItemStack(Items.POTION,1),ModPotions.PHOTORESIST.get()));
         }
     }
 

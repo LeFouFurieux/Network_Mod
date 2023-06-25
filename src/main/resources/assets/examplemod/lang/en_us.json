@@ -7,6 +7,8 @@
 	"item.examplemod.silicon_wafer": "Silicon Wafer",
 	"item.examplemod.silicon_waffle": "Silicon waffle",
 	"item.examplemod.substrate": "Substrate",
+	"item.examplemod.gun_item": "Mushroom gun",
+
 
 	"item.minecraft.potion.effect.photoresist": "Photoresist Liquid",
 	"item.minecraft.splash_potion.effect.photoresist": "Splash Liquid of Photoresist",
@@ -14,7 +16,7 @@
 
 	"block.examplemod.ethernet_wire": "Ethernet Wire",
 	"block.examplemod.smiley_block": "Block of Smile",
-	"block.examplemod.gun": "Rainbow gun",
+
 	"block.examplemod.switch_block": "Switch",
 	"block.examplemod.solar_panel": "Solar panel",
 	"block.examplemod.small_foundry": "Small foundry",
