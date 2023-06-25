@@ -67,7 +67,7 @@ public class ExampleMod
 
     public static final RegistryObject<Block> switch_block = BLOCKS.register("switch_block", () -> new switch_block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops().noOcclusion()));
     public static final RegistryObject<Item> switchItem = ITEMS.register("switch_block", () -> new BlockItem(switch_block.get(), new Item.Properties()));
-    public static final RegistryObject<Item> KIM_BLOCK_ITEM = ITEMS.register("kimc_block", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).build())));
+    public static final RegistryObject<Item> PIZZA_ITEM = ITEMS.register("pizza", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).build())));
     public static final RegistryObject<Block> solar_panel_block = BLOCKS.register("solar_panel", () -> new solar_panel(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops().noOcclusion()));
     public static final RegistryObject<Item> solar_panel = ITEMS.register("solar_panel", () -> new com.example.examplemod.custom_item.solar_panel(solar_panel_block.get(), new Item.Properties()));
     public static final RegistryObject<GunItem> GUN_ITEM = ITEMS.register("gun_item", () -> new GunItem(new Item.Properties()));
@@ -80,7 +80,7 @@ public class ExampleMod
     public static final RegistryObject<Block> ETHERNET_WIRE = BLOCKS.register("ethernet_wire", () -> new ethernet_wire(BlockBehaviour.Properties.of(Material.STONE).noOcclusion()));
     public static final RegistryObject<Item> ETHERNET_WIRE_ITEM = ITEMS.register("ethernet_wire", () -> new BlockItem(ETHERNET_WIRE.get(), new Item.Properties()));
     //public static final RegistryObject<Item> PHOTORESIST = ITEMS.register("photoresist", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<SwordItem> PIZZA_ITEM = ITEMS.register("pizza-sword", () ->new SwordItem(new Tier() {
+    public static final RegistryObject<SwordItem> GREEN_SWORD_ITEM = ITEMS.register("green_sword", () ->new SwordItem(new Tier() {
         @Override
         public int getUses() {
             return 0;
@@ -153,7 +153,7 @@ public class ExampleMod
     {
         if (event.getTab() == ModCreativeModeTabs.NETWORK_TAB) {
             event.accept(EXAMPLE_BLOCK_ITEM);
-            event.accept(KIM_BLOCK_ITEM);
+            event.accept(GREEN_SWORD_ITEM);
             event.accept(GUN_ITEM);
             event.accept(switchItem);
             event.accept(solar_panel);
@@ -165,11 +165,12 @@ public class ExampleMod
             event.accept(SUBSTRATE);
             event.accept(HEAT_SPREADER);
             event.accept(ETHERNET_WIRE_ITEM);
+            event.accept(PIZZA_ITEM);
         }
 
         if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(EXAMPLE_BLOCK_ITEM);
-            event.accept(KIM_BLOCK_ITEM);
+            event.accept(GREEN_SWORD_ITEM);
             event.accept(GUN_ITEM);
             event.accept(switchItem);
             event.accept(solar_panel);
@@ -180,7 +181,7 @@ public class ExampleMod
             event.accept(SILICON_WAFFLE);
             event.accept(SUBSTRATE);
             event.accept(ETHERNET_WIRE_ITEM);
-            event.accept(ETHERNET_WIRE_ITEM);
+            event.accept(PIZZA_ITEM);
         }
     }
 

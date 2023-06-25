@@ -1,6 +1,6 @@
 {
 	"parent" : "item/handheld",
 	"textures": {
-		"layer0":"examplemod:item/kimc_block"
-		}
+		"layer0":"examplemod:item/green_sword"
+	}
 }
