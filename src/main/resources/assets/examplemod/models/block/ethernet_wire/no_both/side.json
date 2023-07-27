@@ -1,0 +1,40 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "examplemod:block/ethernet_wire/major"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 180, 0],
+			"translation": [0, 5.5, 7.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 180, 0],
+			"translation": [0, 5.5, 7.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [58, 180, 0],
+			"translation": [0, 5.5, 7.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [58, 180, 0],
+			"translation": [0, 5.5, 7.75]
+		},
+		"ground": {
+			"translation": [0, 5.25, 0]
+		},
+		"gui": {
+			"rotation": [38.75, -49.5, 0],
+			"translation": [-2.25, 6.75, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"head": {
+			"translation": [0, 15, 0]
+		},
+		"fixed": {
+			"rotation": [-90, 56.25, 90],
+			"translation": [-3, 11.75, 0.75],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}

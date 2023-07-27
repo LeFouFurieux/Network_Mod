@@ -79,6 +79,8 @@ public class ExampleMod
     public static final RegistryObject<Item> SILICON_WAFFLE = ITEMS.register("silicon_waffle", () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(3).build())));
     public static final RegistryObject<Block> ETHERNET_WIRE = BLOCKS.register("ethernet_wire", () -> new ethernet_wire(BlockBehaviour.Properties.of(Material.STONE).noOcclusion()));
     public static final RegistryObject<Item> ETHERNET_WIRE_ITEM = ITEMS.register("ethernet_wire", () -> new BlockItem(ETHERNET_WIRE.get(), new Item.Properties()));
+    public static final RegistryObject<Block> BLUE_ETHERNET = BLOCKS.register("blue_ethernet", () -> new blue_ethernet(BlockBehaviour.Properties.of(Material.STONE).noOcclusion()));
+    public static final RegistryObject<Item> BLUE_ETHERNET_ITEM = ITEMS.register("blue_ethernet", () -> new BlockItem(BLUE_ETHERNET.get(), new Item.Properties()));
     //public static final RegistryObject<Item> PHOTORESIST = ITEMS.register("photoresist", () -> new Item(new Item.Properties()));
     public static final RegistryObject<SwordItem> GREEN_SWORD_ITEM = ITEMS.register("green_sword", () ->new SwordItem(new Tier() {
         @Override
@@ -166,23 +168,7 @@ public class ExampleMod
             event.accept(HEAT_SPREADER);
             event.accept(ETHERNET_WIRE_ITEM);
             event.accept(PIZZA_ITEM);
-            event.accept(PotionUtils.setPotion(new ItemStack(Items.POTION,1),ModPotions.PHOTORESIST.get()));
-        }
-
-        if (event.getTab() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(EXAMPLE_BLOCK_ITEM);
-            event.accept(GREEN_SWORD_ITEM);
-            event.accept(GUN_ITEM);
-            event.accept(switchItem);
-            event.accept(solar_panel);
-            event.accept(small_foundry_item);
-            event.accept(RAW_SILICON_ITEM);
-            event.accept(SILICON_CRYSTAL_ITEM);
-            event.accept(SILICON_WAFER);
-            event.accept(SILICON_WAFFLE);
-            event.accept(SUBSTRATE);
-            event.accept(ETHERNET_WIRE_ITEM);
-            event.accept(PIZZA_ITEM);
+            event.accept(BLUE_ETHERNET_ITEM);
             event.accept(PotionUtils.setPotion(new ItemStack(Items.POTION,1),ModPotions.PHOTORESIST.get()));
         }
     }
