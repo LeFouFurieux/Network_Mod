@@ -32,8 +32,8 @@ public class blue_ethernet extends Block {
     public int currentDirectionIndex = 0;
     public static final DirectionProperty source1 = DirectionProperty.create("source1");
     public static final DirectionProperty dest1 = DirectionProperty.create("dest1");
-    public static final BooleanProperty source1Connnected = BooleanProperty.create("source1Connected");
-    public static final BooleanProperty dest1Connected = BooleanProperty.create("dest1Connected");
+    public static final BooleanProperty source1_connected = BooleanProperty.create("source1_connected");
+    public static final BooleanProperty dest1_connected = BooleanProperty.create("dest1_connected");
     public static Block[] blockEthernet;
     public static Block[] blockWiredConnected;
 
@@ -42,7 +42,12 @@ public class blue_ethernet extends Block {
     };
     public blue_ethernet(Properties pProperties) {
         super(pProperties);
-        this.registerDefaultState(this.stateDefinition.any().setValue(source1, Direction.UP).setValue(dest1, Direction.UP));
+        this.registerDefaultState(this.stateDefinition.any()
+                .setValue(source1, Direction.UP)
+                .setValue(dest1, Direction.UP)
+                .setValue(source1_connected,false)
+                .setValue(dest1_connected,false));
+
         blockEthernet = new Block[]{this, ExampleMod.switch_block.get()};
         blockWiredConnected = new Block[]{ExampleMod.switch_block.get()};
     }
@@ -90,7 +95,16 @@ public class blue_ethernet extends Block {
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
-        return this.defaultBlockState().setValue(source1,blockPlaceContext.getHorizontalDirection()).setValue(dest1,Direction.UP);
+        for( int i =0; i<possibleDirections.length-1;i++ ){
+            if(possibleDirections[i] == blockPlaceContext.getHorizontalDirection().getOpposite()){
+                currentDirectionIndex = i;
+                break;
+            }
+
+        }
+        return this.defaultBlockState()
+                .setValue(source1,blockPlaceContext.getHorizontalDirection())
+                .setValue(dest1,blockPlaceContext.getHorizontalDirection().getOpposite());
     }
 
     @Override
@@ -115,8 +129,8 @@ public class blue_ethernet extends Block {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(source1);
         pBuilder.add(dest1);
-        pBuilder.add(source1Connnected);
-        pBuilder.add(dest1Connected);
+        pBuilder.add(source1_connected);
+        pBuilder.add(dest1_connected);
     }
 
 }

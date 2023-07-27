@@ -1,0 +1,93 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "examplemod:block/ethernet_wire/major",
+		"particle": "examplemod:block/ethernet_wire/major"
+	},
+	"elements": [
+		{
+			"from": [7.75, 0, 0],
+			"to": [8.25, 0.5, 16],
+			"faces": {
+				"north": {"uv": [8, 3, 9, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 10, 1], "texture": "#0"},
+				"south": {"uv": [4, 8, 5, 9], "texture": "#0"},
+				"west": {"uv": [0, 1, 10, 2], "texture": "#0"},
+				"up": {"uv": [1, 12, 0, 2], "texture": "#0"},
+				"down": {"uv": [2, 2, 1, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8.35, 0, 0],
+			"to": [8.85, 0.5, 8.85],
+			"faces": {
+				"north": {"uv": [8, 3, 9, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 10, 1], "texture": "#0"},
+				"south": {"uv": [4, 8, 5, 9], "texture": "#0"},
+				"west": {"uv": [0, 1, 10, 2], "texture": "#0"},
+				"up": {"uv": [1, 12, 0, 2], "texture": "#0"},
+				"down": {"uv": [2, 2, 1, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8.85, 0, 8.35],
+			"to": [16, 0.5, 8.85],
+			"faces": {
+				"north": {"uv": [8, 3, 9, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 10, 1], "texture": "#0"},
+				"south": {"uv": [4, 8, 5, 9], "texture": "#0"},
+				"west": {"uv": [0, 1, 10, 2], "texture": "#0"},
+				"up": {"uv": [1, 12, 0, 2], "texture": "#0"},
+				"down": {"uv": [2, 2, 1, 12], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 180, 0],
+			"translation": [0, 5.5, 7.75]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 180, 0],
+			"translation": [0, 5.5, 7.75]
+		},
+		"firstperson_righthand": {
+			"rotation": [58, 180, 0],
+			"translation": [0, 5.5, 7.75]
+		},
+		"firstperson_lefthand": {
+			"rotation": [58, 180, 0],
+			"translation": [0, 5.5, 7.75]
+		},
+		"ground": {
+			"translation": [0, 5.25, 0]
+		},
+		"gui": {
+			"rotation": [38.75, -49.5, 0],
+			"translation": [-2.25, 6.75, 0],
+			"scale": [1.5, 1.5, 1.5]
+		},
+		"head": {
+			"translation": [0, 15, 0]
+		},
+		"fixed": {
+			"rotation": [-90, 56.25, 90],
+			"translation": [-3, 11.75, 0.75],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "wire_straight",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "wire_to_left",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [1, 2]
+		}
+	]
+}

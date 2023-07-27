@@ -1,29 +1,19 @@
 {
     "variants": {
-        "source1=up,dest1=up": {"model":"examplemod:block/ethernet/wire_no_connect"},
+        "source1=north,dest1=south,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/straight"},
+        "source1=north,dest1=west,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side"},
+        "source1=north,dest1=east,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 90},
 
-        "source1=north,dest1=up": {"model":"examplemod:block/ethernet/ethernet_wire"},
-        "source1=north,dest1=north": {"model":"examplemod:block/ethernet/ethernet_wire_straight"},
-        "source1=north,dest1=south": {"model":"examplemod:block/ethernet/ethernet_wire_straight"},
-        "source1=north,dest1=west": {"model":"examplemod:block/ethernet/wire_to_side"},
-        "source1=north,dest1=east": {"model":"examplemod:block/ethernet/wire_to_side","y": 90},
+        "source1=south,dest1=north,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/straight"},
+        "source1=south,dest1=west,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y":270},
+        "source1=south,dest1=east,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 180},
 
-        "source1=south,dest1=up": {"model":"examplemod:block/ethernet/ethernet_wire","y":180},
-        "source1=south,dest1=north": {"model":"examplemod:block/ethernet/ethernet_wire_straight"},
-        "source1=south,dest1=south": {"model":"examplemod:block/ethernet/wire_to_side"},
-        "source1=south,dest1=west": {"model":"examplemod:block/ethernet/wire_to_side","y":270},
-        "source1=south,dest1=east": {"model":"examplemod:block/ethernet/wire_to_side","y": 180},
+        "source1=west,dest1=north,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 270},
+        "source1=west,dest1=south,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side"},
+        "source1=west,dest1=east,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/straight","y": 90},
 
-        "source1=west,dest1=up": {"model":"examplemod:block/ethernet/ethernet_wire","y":270},
-        "source1=west,dest1=north": {"model":"examplemod:block/ethernet/wire_to_side"},
-        "source1=west,dest1=south": {"model":"examplemod:block/ethernet/wire_to_side","y": 90},
-        "source1=west,dest1=west": {"model":"examplemod:block/ethernet/ethernet_wire_straight","y": 90},
-        "source1=west,dest1=east": {"model":"examplemod:block/ethernet/ethernet_wire_straight","y": 90},
-
-        "source1=east,dest1=up": {"model":"examplemod:block/ethernet/ethernet_wire","y":90},
-        "source1=east,dest1=north": {"model":"examplemod:block/ethernet/wire_to_side"},
-        "source1=east,dest1=south": {"model":"examplemod:block/ethernet/wire_to_side","y": 90},
-        "source1=east,dest1=west": {"model":"examplemod:block/ethernet/ethernet_wire_straight","y": 90},
-        "source1=east,dest1=east": {"model":"examplemod:block/ethernet/ethernet_wire_straight","y": 90}
+        "source1=east,dest1=north,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 90},
+        "source1=east,dest1=south,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 180},
+        "source1=east,dest1=west,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/straight","y": 90}
     }
 }
