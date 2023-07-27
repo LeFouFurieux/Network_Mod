@@ -1,5 +1,4 @@
 {
-	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "examplemod:block/ethernet_wire/major",
 		"particle": "examplemod:block/ethernet_wire/major"

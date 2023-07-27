@@ -1,19 +1,52 @@
 {
     "variants": {
-        "source1=north,dest1=south,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/straight"},
-        "source1=north,dest1=west,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side"},
-        "source1=north,dest1=east,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 90},
+        "source1=north,dest1=south,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_straight"},
+        "source1=north,dest1=west,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_side"},
+        "source1=north,dest1=east,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_side","y": 90},
 
-        "source1=south,dest1=north,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/straight"},
-        "source1=south,dest1=west,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y":270},
-        "source1=south,dest1=east,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 180},
+        "source1=south,dest1=north,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_straight"},
+        "source1=south,dest1=west,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_side","y":270},
+        "source1=south,dest1=east,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_side","y": 180},
 
-        "source1=west,dest1=north,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 270},
-        "source1=west,dest1=south,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side"},
-        "source1=west,dest1=east,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/straight","y": 90},
+        "source1=west,dest1=north,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_side","y": 270},
+        "source1=west,dest1=south,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_side"},
+        "source1=west,dest1=east,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_straight","y": 90},
 
-        "source1=east,dest1=north,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 90},
-        "source1=east,dest1=south,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/side","y": 180},
-        "source1=east,dest1=west,source1_connected=false,dest1_connected=false": {"model":"examplemod:block/ethernet_wire/no_both/straight","y": 90}
+        "source1=east,dest1=north,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_side","y": 90},
+        "source1=east,dest1=south,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_side","y": 180},
+        "source1=east,dest1=west,source2=up,dest2=up": {"model":"examplemod:block/ethernet_wire/single_straight","y": 90},
+
+
+        "source1=north,dest1=south,source2=north,dest2=south": {"model":"examplemod:block/ethernet_wire/double_straight"},
+        "source1=north,dest1=south,source2=north,dest2=west": {"model":"examplemod:block/ethernet_wire/double_straight_side"},
+        "source1=north,dest1=south,source2=north,dest2=east": {"model":"examplemod:block/ethernet_wire/double_side_straight"},
+
+        "source1=north,dest1=west,source2=north,dest2=south": {"model":"examplemod:block/ethernet_wire/double_straight_side"},
+        "source1=north,dest1=west,source2=north,dest2=west": {"model":"examplemod:block/ethernet_wire/double_side_a","y": 270},
+        "source1=north,dest1=west,source2=north,dest2=east": {"model":"examplemod:block/ethernet_wire/double_side_side"},
+
+        "source1=north,dest1=east,source2=north,dest2=south": {"model":"examplemod:block/ethernet_wire/double_side_straight"},
+        "source1=north,dest1=east,source2=north,dest2=west": {"model":"examplemod:block/ethernet_wire/double_side_side"},
+        "source1=north,dest1=east,source2=north,dest2=east": {"model":"examplemod:block/ethernet_wire/double_side"},
+
+        "source1=south,dest1=north,source2=south,dest2=north": {"model":"examplemod:block/ethernet_wire/double_straight"},
+        "source1=south,dest1=north,source2=south,dest2=west": {"model":"examplemod:block/ethernet_wire/double_side_straight","y": 180},
+        "source1=south,dest1=north,source2=south,dest2=east": {"model":"examplemod:block/ethernet_wire/double_straight_side","y": 180},
+
+        "source1=south,dest1=west,source2=south,dest2=north": {"model":"examplemod:block/ethernet_wire/double_side_straight","y": 180},
+        "source1=south,dest1=west,source2=south,dest2=west": {"model":"examplemod:block/ethernet_wire/double_side","y": 180},
+        "source1=south,dest1=west,source2=south,dest2=east": {"model":"examplemod:block/ethernet_wire/double_side_side","y": 180},
+
+        "source1=south,dest1=east,source2=south,dest2=north": {"model":"examplemod:block/ethernet_wire/double_straight_side","y": 180},
+        "source1=south,dest1=east,source2=south,dest2=west": {"model":"examplemod:block/ethernet_wire/double_side_side","y": 180},
+        "source1=south,dest1=east,source2=south,dest2=east": {"model":"examplemod:block/ethernet_wire/double_side_b","y": 90},
+
+        "source1=west,dest1=north,source2=west,dest2=north": {"model":"examplemod:block/ethernet_wire/double_side"},
+        "source1=west,dest1=south,source2=west,dest2=south": {"model":"examplemod:block/ethernet_wire/double_side"},
+        "source1=west,dest1=east,source2=west,dest2=east": {"model":"examplemod:block/ethernet_wire/double_straight","y": 90},
+
+        "source1=east,dest1=north,source2=east,dest2=north": {"model":"examplemod:block/ethernet_wire/double_side","y": 90},
+        "source1=east,dest1=south,source2=east,dest2=south": {"model":"examplemod:block/ethernet_wire/double_side","y": 180},
+        "source1=east,dest1=west,source2=east,dest2=west": {"model":"examplemod:block/ethernet_wire/double_straight","y": 90}
     }
 }

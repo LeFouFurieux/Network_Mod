@@ -1,4 +1,5 @@
 {
+	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "examplemod:block/ethernet_wire/major",
 		"particle": "examplemod:block/ethernet_wire/major"
@@ -6,7 +7,7 @@
 	"elements": [
 		{
 			"from": [7.75, 0, 0],
-			"to": [8.25, 0.5, 16],
+			"to": [8.25, 0.5, 8.25],
 			"faces": {
 				"north": {"uv": [8, 3, 9, 4], "texture": "#0"},
 				"east": {"uv": [0, 0, 10, 1], "texture": "#0"},
@@ -17,8 +18,32 @@
 			}
 		},
 		{
-			"from": [8.35, 0, 0],
-			"to": [8.85, 0.5, 16],
+			"from": [7.65, 0, 8.35],
+			"to": [16, 0.5, 8.85],
+			"faces": {
+				"north": {"uv": [8, 3, 9, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 10, 1], "texture": "#0"},
+				"south": {"uv": [4, 8, 5, 9], "texture": "#0"},
+				"west": {"uv": [0, 1, 10, 2], "texture": "#0"},
+				"up": {"uv": [1, 12, 0, 2], "texture": "#0"},
+				"down": {"uv": [2, 2, 1, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.15, 0, 0],
+			"to": [7.65, 0.5, 8.85],
+			"faces": {
+				"north": {"uv": [8, 3, 9, 4], "texture": "#0"},
+				"east": {"uv": [0, 0, 10, 1], "texture": "#0"},
+				"south": {"uv": [4, 8, 5, 9], "texture": "#0"},
+				"west": {"uv": [0, 1, 10, 2], "texture": "#0"},
+				"up": {"uv": [1, 12, 0, 2], "texture": "#0"},
+				"down": {"uv": [2, 2, 1, 12], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8.25, 0, 7.75],
+			"to": [16, 0.5, 8.25],
 			"faces": {
 				"north": {"uv": [8, 3, 9, 4], "texture": "#0"},
 				"east": {"uv": [0, 0, 10, 1], "texture": "#0"},
@@ -65,16 +90,16 @@
 	},
 	"groups": [
 		{
-			"name": "wire_straight",
+			"name": "wire_to_left",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [0]
+			"children": [0, 1]
 		},
 		{
-			"name": "wire_straight",
+			"name": "wire_to_left",
 			"origin": [8, 8, 8],
 			"color": 0,
-			"children": [1]
+			"children": [2, 3]
 		}
 	]
 }
